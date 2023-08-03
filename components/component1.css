@@ -1,0 +1,14 @@
+.component1-container {
+  display: flex;
+  position: relative;
+}
+.component1-link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+@media(max-width: 479px) {
+  .component1-link {
+    text-align: center;
+  }
+}
