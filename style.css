@@ -37,7 +37,11 @@
   @media (max-width: 768px) {
     /* Your styles for smaller screens */
   }
-  
+
+body{
+    cursor: crosshair;
+}
+
   .button {
     color: #ffffff;
     cursor: pointer;
