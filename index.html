@@ -1,286 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RobinTT</title>
-    <meta property="og:title" content="RobinTT" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
 
 
-    <meta content="RobinTT" property="og:title" />
-    <meta content="my bio" property="og:description" />
-    <meta content="https://robintt.me" property="og:url" />
-    <meta content="https://cdn.discordapp.com/avatars/685666840021958685/cd958c9506fb817e24fb7eeb6fc2ef74.png" property="og:image" />
-    <meta content="#ff0000" data-react-helmet="true" name="theme-color" />
 
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="shortcut icon"
-      href="public/icon.png"
-      type="icon/png"
-      sizes="32x32"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <!--This is the head section-->
-    <!-- <style> ... </style> -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/blaze-slider@latest/dist/blaze.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body> 
-  <div>
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
-      ></script>
-      <link href="./index.css" rel="stylesheet" />
-
-      <div class="home-container">
-        <section class="home-hero">
-          <video
-            src="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/8k9glb05.mp4"
-            loop=""
-            muted=""
-            poster="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/avt58vyx.png"
-            preload="auto"
-            autoplay=""
-            playsinline="true"
-            class="home-video"
-          ></video>
-          <header data-thq="thq-navbar" class="home-navbar">
-            <div data-thq="thq-burger-menu" class="home-burger-menu"></div>
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                class="home-nav"
-              >
-                <div class="home-container1">
-                  <img alt="image" src="public/logo.svg" class="home-image" />
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav
-                  data-thq="thq-mobile-menu-nav-links"
-                  data-role="Nav"
-                  class="home-nav1"
-                >
-                  <span class="home-text">About</span>
-                  <span class="home-text01">Features</span>
-                  <span class="home-text02">Pricing</span>
-                  <span class="home-text03">Team</span>
-                  <span class="home-text04">Blog</span>
-                </nav>
-                <div class="home-container2">
-                  <button class="home-login button">Login</button>
-                  <button class="button">Register</button>
-                </div>
-              </div>
-              <div class="home-icon-group">
-                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon2">
-                  <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon4">
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon6">
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </header>
-          <div class="home-hero-content">
-            <h1 class="home-heading">
-              <span>RobinTT</span>
-              <br />
-            </h1>
-            <p class="home-caption">
-              <span class="home-text07">Certified dingleberry</span>
-              <br />
-            </p>
-            <div class="home-header-container">
-              <div class="home-header"></div>
-            </div>
-          </div>
-        </section>
-        <div class="home-container3">
-          <a
-            href="https://discord.gg/6Wp6Kxjgh5"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link"
-          >
-            <img
-              alt="image"
-              src="public/social-icons/discord-200h.png"
-              class="home-image1"
-            />
-          </a>
-          <a
-            href="https://e-z.bio/robintt"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link1"
-          >
-            <img
-              alt="image"
-              src="public/social-icons/e-z.bio-200h.png"
-              class="home-image2"
-            />
-          </a>
-          <a
-            href="https://steamcommunity.com/profiles/76561199084195911/"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link2"
-          >
-            <img
-              alt="image"
-              src="data:image/png;base64,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"
-              class="home-image3"
-            />
-          </a>
-          <a
-            href="https://youtube.com/@therealalphajake"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link3"
-          >
-            <img
-              alt="image"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAY1BMVEUAAAD////ExMTLy8t5eXne3t7IyMj4+Phzc3O6urotLS2ZmZloaGhKSkrBwcGxsbEyMjITExNUVFRcXFyoqKiHh4fk5OTs7OzV1dXy8vIhISFAQEBFRUUnJyc3NzeBgYGRkZEl199SAAACIElEQVRoge2Z127DMAxFJY/E24lnZpP//8rKGWiBJtKlS8FFwfMUwI4PPERSpFKCIAiCIAiCIAiC8H/YZmXTFkly6fOuTg1VsJoI79x+B9V0oO7y/pIkRduU2fZXzrKvV2E8jGtNZT0Ocbiq+3KW9xKThT+JL2TvecfgndhlNHG2ZxKbJ78hmUc2sdZ7irhmFGudEp41q1jrD9jcMZs72Myxnr4zoOIDs1jrA2hu2M0FaM7ZzTloTtnNFWgOrVeZE91CTLy1f9pVSQ/pMZY0D4P1KoFSBXXZjdjH7cgWwXROQgvsYNY42q8S3M+KSO/7CJlPkNmUDoT7xooTRyAJvs68wu4GMrewWR1y8Jm3kLnAzaZq6qD6EAufCcWs1EcNuBPIHNHMZjG4w23kx2zuO1jKbNz2YO/RbBajze3VbBbF+0/Nrzmy5BGf5sSav/yZW0fe9GVunLWCH7Pb68dsXUxEMyVulxXiReM2nqtOKdrIwHIVmp83SJJ6gOVnsCbBEvMDrCaB6jDiDugEmYHaM6c2qrDac2OvrSp1JTfI9li97dhjDPbDr/+D7TEc+6o5gPsqx15yDuBeUoFxiQDal1quZ+AIYjPAQtiSvSH2fliMihfsAW6YzYQ+M29fitDrVYqvsU7sb6uMPjV5B7GnrzK2OcaZJlbLzW4mlppXPXnO6KI+724jupczutuQrsv7iGVGJwiCIAiCIAiCIAh/i0/IGiHZZy4iDwAAAABJRU5ErkJggg=="
-              class="home-image4"
-            />
-          </a>
-          <section class="home-note">
-            <img
-              alt="image"
-              src="public/social-icons/socials-text-200h.png"
-              class="home-image5"
-            />
-            <h2 class="home-caption1">
-              "My code is self-aware. It knows how to make me question my life
-              choices."-me
-            </h2>
-          </section>
-        </div>
-        <section class="home-objectives">
-          <div class="home-content">
-            <span class="home-text09">
-              <span class="home-text10">Goals&nbsp; &nbsp;&nbsp;</span>
-              <br />
-            </span>
-            <div class="home-objectives-list">
-              <div class="objective">
-                <h3 class="home-text12">Code</h3>
-                <p class="home-text13">
-                  <span>I want to learn how</span>
-                  <br />
-                  <span>to code in a&nbsp;</span>
-                  <br />
-                  <span>veriety of languages</span>
-                  <br />
-                </p>
-              </div>
-              <div class="objective home-objective1">
-                <h3 class="home-text20">Develop</h3>
-                <p class="home-text21">
-                  <span>I want to devolop&nbsp;</span>
-                  <br />
-                  <span>something that</span>
-                  <br />
-                  <span>people will use</span>
-                  <br />
-                  <span>and enjoy</span>
-                  <br />
-                </p>
-              </div>
-              <div class="objective home-objective2">
-                <h3 class="home-text30">
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Job
-                </h3>
-                <p class="home-text31">I want to get a good job and learn.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="home-footer">
-          <div class="home-content1">
-            <div class="home-bottom">
-              <span class="home-text32">
-                © 2023 RobinTT - All rights reserved
-              </span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <dangerous-html
-            html="<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // get the element with the 'scroll-top' data-role
-  const scrollTopBtn = document.querySelector('[data-role='scroll-top']');
-
-  // when the element is clicked
-  scrollTopBtn.addEventListener('click', function() {
-    // smoothly scroll to the top of the page
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-});
-</script>
-"
-          ></dangerous-html>
-        </div>
-        <img
-          alt="image"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAZlBMVEUAAAD////7+/vt7e34+Pjh4eHQ0NAzMzOrq6vq6urY2Njw8PDc3NyioqKWlpbIyMi/v79fX1+3t7dsbGwsLCw/Pz+AgIBycnI4ODgbGxtnZ2dJSUkhISFQUFBWVlYmJiaNjY0PDw8RVf7SAAAIDUlEQVRogd1b65aDKAwer/Vara3a6tjq+7/kKgFFTUCts+fsfr9mWiCQewL9+flvouv+ZYLPW3nNXMe3wh6W5QfZtbw9/5rqqy5SJzQQhE5a1L9/RrdKHYzqBD+9/wX1KrXVdAF2ej+X7iveRJdTj887epMi6/uRm/RwIx/ZVfo+h3CyEKibFc3l8+KG1b0+l6bIXGs+Kmm+JvyYnTh02/eDGPhug5nup5fvKLcSN+2kJMiO5MtEHn/9wuPU0bSQ02rocuqtZIDOYa7H0yLubfu0mzvN8w4RfkzbT/J9U/NJM/0DEq/M8cQH2PYORuLl3rkjs8NiP+EBxaju8b6Jo0mlhz3TZ1pjzzShKPbBIwMKYWnu9jnCpqJN9kTjIRZyts7wv7KMGTyh6NuGi61+xWyBYs+5hZx3GwWOcru8M65g1TmUewdhb9Tz69mUJ9oa+644e06kPPFcKcKHeaqcl7RV/tzZqNu/96uXOH0ibjmJd9WnoYXWxOJN9lzF/hhaAKbv3dVpgadZOec+TLVG7S2SMAHLUwY4zk9qDAQ6W+E9366JEwbTVeQTF1BzB2dOqxP0M1HQBeJ0TsHFfcW+e0CATcjJsYLmCFpPYN82VheCGws/xMyGkPESIZX9f+BoiFOrTSW7r9sID6C8Fmf5emuQUwTEtGw7ZdpbgxqvJFpTWxrQIUWXCskLXeYG3y4NLMN3BJS1mr2Ei9NOUKbAFNw2dp6ZPgNn7XxfoEV4ON8k59Cf9zlweUMaMtdDmId6I71uO3HNRuaxVKOheg4x2ZY/erOP0MBS6wj7coStpmoJPQdknHI2ADxt6cE0soVXFjmoEWKrgbOWpNExfttYJNd5zzVfW/EV5lOfLIrYk6IBvzElu2go8+XzOEkSDyQ+KUeNLOguOA78xnyoxq7A+eUif46e0vL4WYo5xzummCESU95qymYuVkviNk7G7YvvEU17Mtk6guO5dII5NG4sG8bc+6ngih4uTyiFgmDHDmaygIQRCeK1KicRC9iS60qNcNDVXMxDQgJoghBuRg3TqHfUsaUsKaPyQfGEdWfrNUGGQtggasS0NDadwhiZXQX4JWHc1joV48KGfz6MAiLqiiQKYDTnif3FNt8/U31pIL3aQDro25RZIEHnTgaB5YuUymKKJsoNjONgr6D8d/Z3ux6k6X4zLdOQttargp6B4wfPt9ayTqPfIGPDkP3BY8Fwc61BN2ky6MR6jEbUgTjmQs26HymGIIXjU5IEY765rjlanKQA32tsWBLHF8aFeYsH+xy8DVM5a10tqrWsFcPMmUthKf5zEtVaz34l62K2hRRDSi86+cj7GDZ+Xe6mYmycQMdY4k+kEbO+KWjLNeGgU8H1eh0CFqPcSQORzhFwmf1p4bvrcfEofzbTnnoMms2KXUiuEkyf06R7HpbRkuqApf9pPDdwPW6fM/W0V0tCONeT7vHOVlc6vqqDURinkR4uFRZ8V10JLOyCYjjImlIzGZUsP8QxC9yWzhdRs2gizUYTnYYJXcy4k7QVeX1Wt2uvrzYu0LgNLfd7kOFlXI/SRy94NS4FotjW1nddlvd1VUjWZWpHCoqx9WamdIbLtnmN3NDhVR0+wA63X2TdUnOetCsKQiRoVhI37gRnaDwS6Ti/Lk1Zlyo0VILUUN2kQbamOIQyoUDqLlAtMBMyLbwbKSWGTiSimrofaTGDR+FaTdY9/Z78Frc6j+noW5O+hUgyzNxyNC4zADkg0/0ww3xIOXjnQkGVAfF7kJoJ8YKeIR0IUfgE5cqVMNLa/g5Z0QgDgRJJWe75y6cP3jBepdsDsJgEQbie/RsinSupyJ0nb72axfpmByLDnIl6ihjejAnosYd1uukFQDZ0v24HDr0o7X8ag+K41NBIBr+XsYMMbydabfWNNjSCBTs6xjkb6xVKkb9k/zlZ7NpMKXWHxto4oFahpLXgGFBfOsnTekLw6OEMFaTmgQ7avAIvKtsc9OUQhyuEweAPXudWXIuBX48DOia6kjOb8wVLqY0ymJMmFrpHSWijskT4AYETT9BkN23Ft9+f1zvW3kbg7Vkw6oVgjTUnRhxoSuMJLncTaGsTn3GgFY/HHLCspWPnxSF+g7uXNkGZF+wrcweJUpeKp1y7OMS34FyNlph2wmUTqLKJ+DiQNtqZHrD5io1KbPitJla6QGquKL6+vFiECBui+T7POVpycq6/TsUiBkB9WQv7MhUvvG7K5EB1icwTHqqq5BFS+XKmoa/Ola8ouccnj8WZonlBcvf2PxjgDlFRZwTaEYD5Mwnda8fRNFVPEbpQqQxHwRXYJkvkASIPPJW2SNc1FSUXt3nioxhBudUN5J1V87RzF1wnFR0YgfRcnosz088vJAi3safiJiHCjqZDJSAahLteQuIQLNz8uFCc26dd8ibU1r4zDxCbNb9i+lU4vU1yFhhvENzDv6p4jqFmg27LGNu7dnvolXc3Htlo9859j90/58Brv/vY6bAP/Cygm2JzsON1+IDb1EQPlH6bhNRTj3Y41kLq7RxW04uUlNjxJkur5V+IHNfRHoWUk5hRq6Fet5GURBx9WS7w8uSS0o7iishx8sqLZkM9ute4Fc9sng7ZURLf68fnNfyaq+ten0dexkk0L3rNbOfPByjinrGG7TtREEQO9jsb4yTCDMjVAgm/PY8uQ05et83pel+GHBRd4wXKDrQZec3f/Zqv1+MAk67tBx6l+yfi1VRFnA6/G+zhO24aF1XzZz/b+7/hHwI/Xk1ATZs5AAAAAElFTkSuQmCC"
-          class="home-image6"
-        />
-      </div>
+    <div class="video-background">
+        <video autoplay muted loop poster="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/9e138gir.png">
+            <source src="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/44n43vc7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- <div class="content">
+            <h1>include h1 if wanted</h1>
+        </div> -->
     </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
-    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
-  </body>
+
+
+
+    <nav>
+        <ul>
+            <li>RobinTT</li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+<section class="main-content-left">
+<h1>Socials:</h1>
+<p><a target="_blank" href="https://steamcommunity.com/profiles/76561199084195911/"><img class="svg" src="./public/steam.svg" alt="Steam"></a></p>
+<p><img class="svg" src="./public/discord.svg" alt="Discord" title="techsupport2.0"></p>
+<p><a target="_blank" href="https://github.com/betamalejake"><img class="svg" src="./public/github.svg" alt="Github"></a></p>
+</section>
+
+
+<img class="rounded" src="./public/icon.png" alt="minecraft logo" width="200px" height="200px">
+
+
+<section class="main-content-right">
+<p>I am passionately dedicated to acquiring proficiency in a multitude of programming languages and frameworks, driven by my ultimate goal of creating software that resonates with and benefits people. I firmly believe that the versatility offered by various languages and frameworks is the key to addressing diverse challenges and catering to the unique needs of users, motivating me to explore this ever-evolving landscape continually.</p>
+</section>
+</main>
+
+
+<!-- <footer>
+
+    <p>Include Footer If wanted</p>
+    
+    
+    </footer>
+ -->
+
+</body>
 </html>
