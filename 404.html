@@ -16,6 +16,7 @@
             background: #f4f4f4;
             color: #333;
             font-family: Arial, sans-serif;
+            position: relative; /* Ensure relative positioning for z-index to work */
         }
 
         .container {
@@ -39,6 +40,14 @@
             left: 0;
             object-fit: cover;
             z-index: -1;
+        }
+
+        img {
+            position: absolute; /* Ensure absolute positioning for z-index to work */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Set a higher z-index to bring the poster to the foreground */
         }
     </style>
 </head>
