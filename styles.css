@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+/* Page Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    color: aliceblue;
+    cursor: crosshair;
+}
+
+body {
+    background: linear-gradient(to bottom, #800080, #3498db);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar styles */
+
+nav {
+    background-color: hsla(0, 0%, 0%, 0.425);
+    filter: drop-shadow(2px 2px 5px #b8b1b1);
+    width: 100%;
+   /*  border: 5px solid red; */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     margin-bottom: 20px; */
+}
+
+ul li {
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(250, 112, 0);
+}
+
+
+/* Main page styles */
+
+h1 {
+    margin-top: 3rem;
+    color: azure;
+    text-align: center;
+}
+
+/* Main page styles */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 5px solid red; */
+}
+
+.main-content-left,
+.main-content-right {
+    margin: 2rem;
+    padding: 20px;
+    font-size: 1.3rem;
+    gap: 20px;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.425);
+    filter: drop-shadow(2px 2px 5px #b8b1b1);
+    border-radius: 20px;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.main-content-left p,
+.main-content-right p {
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.main-content-right p {
+    padding: 2rem;
+}
+
+.main-content-right p {
+    padding: 2rem;
+}
+
+.svg {
+    height: 64px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: hsla(0, 0%, 0%, 0.425);
+    filter: drop-shadow(5px 5px 10px #ffffff);
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    text-align: center;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-content-left,
+    .main-content-right {
+        width: 100%;
+    }
+}
