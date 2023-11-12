@@ -8,19 +8,15 @@
     padding: 0;
 }
 
-html {
+html{
     font-family: sans-serif;
     color: aliceblue;
     cursor: crosshair;
 }
 
 body {
-    background: black;
+    background: linear-gradient(to bottom, #800080, #3498db);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Navbar styles */
@@ -28,8 +24,9 @@ body {
 nav {
     background-color: hsla(0, 0%, 0%, 0.425);
     filter: drop-shadow(2px 2px 5px #b8b1b1);
-    width: 100%;
-   /*  border: 5px solid red; */
+    position: sticky;
+    top: 0;
+    width: 100vw;
 }
 
 ul {
@@ -37,17 +34,16 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-/*     margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 ul li {
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     font-weight: 900;
     color: rgb(250, 112, 0);
 }
-
 
 /* Main page styles */
 
@@ -57,44 +53,55 @@ h1 {
     text-align: center;
 }
 
-/* Main page styles */
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* border: 5px solid red; */
-}
-
 .main-content-left,
 .main-content-right {
     margin: 2rem;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     font-size: 1.3rem;
     gap: 20px;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.425);
     filter: drop-shadow(2px 2px 5px #b8b1b1);
-    border-radius: 20px;
-    width: 80%; /* Adjust the width as needed */
+    width: 50%;
+    border-radius: 40px;
 }
 
 .main-content-left p,
 .main-content-right p {
     color: whitesmoke;
     font-size: 1.3rem;
+    /* display: flex;
+    justify-content: start; */
     font-family: sans-serif;
     font-weight: 600;
 }
 
-.main-content-right p {
-    padding: 2rem;
+
+.main-content-right {
+    height: 20rem;
 }
 
-.main-content-right p {
-    padding: 2rem;
+.main-content-right p  {
+    padding: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: inherit;
 }
+
+
+
+main {
+    height: 80vh;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid #fd0000; */
+}
+
+
 
 .svg {
     height: 64px;
@@ -128,18 +135,16 @@ main {
     transform: scale(1.1);
 }
 
-
-
-
-
 h1 {
     margin: 0;
     margin-top: 1rem;
 }
 
+
 .rounded {
-    border-radius: 50%;
+    border-radius: 50px;
 }
+
 
 /* Footer */
 
@@ -150,18 +155,19 @@ footer {
     bottom: 0; 
     width: 100%;
     text-align: center;
-}
+  }
+
+
 
 /* VIDEO BACKGROUND */
 
+
+  
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
-    z-index: -1;
 }
 
 .video-background video {
@@ -183,13 +189,84 @@ footer {
     background: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-    }
 
-    .main-content-left,
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 480px) {
     .main-content-right {
-        width: 100%;
+      height: auto;
     }
+    .main-content-right p {
+      display: none;
+    }
+  }
+  
+@media (max-width: 1031px) {
+    .main-content-right p {
+    font-size: 0.9rem;
+    }
+  }
+@media (max-width: 680px) {
+    .main-content-right p {
+    font-size: 0.8rem;
+    }
+  }
+@media (max-width: 620px) {
+    .main-content-right p {
+    font-size: 0.6rem;
+    }
+  }
+  
+
+
+/* Discord Hover */
+
+.main-content-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tooltip-container {
+    position: relative;
+width: 70px;  
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    transition: opacity 0.3s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+   border: 4px solid rgb(250, 112, 0);
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
