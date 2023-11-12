@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #800080, #3498db);
+    background: black;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -98,7 +98,39 @@ main {
 
 .svg {
     height: 64px;
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+
+.svg:hover{
+    transform: scale(1.3);
+}
+
+
+.svg:active{
+    background-color: black;
+    border-radius: 40px;
+    transform: scale(1.1);
+}
+
+
+.logo {
+    border: 3px solid rgb(250, 112, 0);
+    height: 190px;
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.logo:hover{
+    transform: scale(1.3);
+}
+
+.logo:active{
+    transform: scale(1.1);
+}
+
+
+
+
 
 h1 {
     margin: 0;
@@ -106,7 +138,7 @@ h1 {
 }
 
 .rounded {
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 /* Footer */
