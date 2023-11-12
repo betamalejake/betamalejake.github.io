@@ -21,15 +21,11 @@
 <body>
 
 
-
     <div class="video-background">
         <video autoplay muted loop poster="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/9e138gir.png">
             <source src="https://r2.e-z.host/8a13052f-8c12-4034-b99f-0155cc616583/44n43vc7.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <!-- <div class="content">
-            <h1>include h1 if wanted</h1>
-        </div> -->
     </div>
 
 
@@ -40,24 +36,29 @@
         </ul>
     </nav>
 
-
     <main>
 
-<section class="main-content-left">
-<h1>Socials:</h1>
-<p><a target="_blank" href="https://steamcommunity.com/profiles/76561199084195911/"><img class="svg" src="./public/steam.svg" alt="Steam"></a></p>
-<p><img class="svg" src="./public/discord.svg" alt="Discord" title="techsupport2.0"></p>
-<p><a target="_blank" href="https://github.com/betamalejake"><img class="svg" src="./public/github.svg" alt="Github"></a></p>
-</section>
+        <section class="main-content-left">
+            <h1>Socials:</h1>
+            <p><img class="svg" src="./public/steam.svg" alt="Steam"></p>
+            <p class="tooltip-container"> <!-- Added a container for tooltip -->
+                <img class="svg discord-image" src="./public/discord.svg" alt="Discord" title="techsupport2.0">
+                <span class="tooltip">techsupport2.0</span> <!-- Tooltip box -->
+            </p>
+            <p><a href="https://github.com/betamalejake"><img class="svg" src="./public/github.svg" alt="Github"></a></p>
+        </section>
+
+        <!-- Existing image -->
+        <img class="rounded logo" src="./public/icon.png" alt="discord logo" width="200px" height="200px">
+
+        <section class="main-content-right">
+            <p>I am passionately dedicated to acquiring proficiency in a multitude of programming languages and frameworks, driven by my ultimate goal of creating software that resonates with and benefits people. I firmly believe that the versatility offered by various languages and frameworks is the key to addressing diverse challenges and catering to the unique needs of users, motivating me to explore this ever-evolving landscape continually.</p>
+        </section>
+
+    </main>
 
 
-<img class="rounded logo" src="./public/icon.png" alt="discord profile" width="200px" height="200px">
 
-
-<section class="main-content-right">
-<p>I am passionately dedicated to acquiring proficiency in a multitude of programming languages and frameworks, driven by my ultimate goal of creating software that resonates with and benefits people. I firmly believe that the versatility offered by various languages and frameworks is the key to addressing diverse challenges and catering to the unique needs of users, motivating me to explore this ever-evolving landscape continually.</p>
-</section>
-</main>
 
 
 <!-- <footer>
@@ -65,8 +66,8 @@
     <p>Include Footer If wanted</p>
     
     
-    </footer>
- -->
+    </footer> -->
+
 
 </body>
 </html>
